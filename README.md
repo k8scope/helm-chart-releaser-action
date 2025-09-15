@@ -53,10 +53,10 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run chart-releaser
-        uses: urbanmedia/helm-chart-releaser-action@v1.0.0
+        uses: k8scope/helm-chart-releaser-action@v1.0.0
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
-          chart_repository_url: oci://ghcr.io/urbanmedia/helm-charts
+          chart_repository_url: oci://ghcr.io/k8scope/helm-charts
           chart_repository_username: ${{ secrets.GHCR_USERNAME }}
           chart_repository_password: ${{ secrets.GHCR_PASSWORD }}
 ```
